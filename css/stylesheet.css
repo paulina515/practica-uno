@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918&family=Open+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918&family=Open+Sans:ital,wght@1,300&family=Yanone+Kaffeesatz:wght@300&display=swap');
+
 *{
 padding: 0%;
 margin:0%;
@@ -10,19 +14,43 @@ box-sizing: border-box;
 
 /*afectando etiqueta*/
 
+/*
+font-family:'brygda', sans-serif;
+font-family:'yanone', sans-serif;
+*/
+
+
+
 html{
 scroll-behavior: smooth;
 
 }
+
+h1{
+    font-family:"brygda", sans-serif;
+}
+
+h2,
+h3,
+h4{
+    font-family:'yanone', sans-serif;
+
+}
+table{
+    font-family:'roboto', sans-serif, arial;
+
+}
+
 header{
     height: auto;
     width: 100vw;
-background-color: black;
-color:white;
-display:flex ;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
+    background-color: black;
+    color:white;
+    display:flex ;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 1em;
 }
 
 nav{
@@ -51,24 +79,97 @@ nav a:hover{
 }
 
 main{
-    width: 90vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-
+    align-items: center;
 }
 
 section{
-    margin:20px;
+    margin: 20px;
     width: 80%;
     height:auto;
     background-color: #333;
-    color: rgb(238, 238, 238)
+    color: rgb(238, 238, 238);
     padding: 25px;
     border-radius:10px;
-
 }
 
 /*afectando clase*/
 /*afectando id*/
+#wellcome {
+    width: 100%;
+    margin: 0;
+    border-radius:0;
+    background-image: url(../assets/img/header.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-position: center;
+}
+
+#aboutme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#profilepic {
+    width: 400px;
+    height: 400px;
+    background-color: transparent;
+    background-image: url(../img/code.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 0px 100px rgba (0, 0, 0, 0.9);
+}
+
+#center {
+    display: flex;
+    justify-content: center;
+}
+
+#social {
+    margin: 15px;
+}
+
+#social li {
+    display: inline-block;
+}
+
+#social li a {
+    color: white;
+    padding: 10px;
+    font-size: x-large;
+    transition: 0.5s;
+}
+
+#social li a.facebook :hover{
+    color: dodgerblue;
+    transition: 0.5s;
+}
+
+#social li a.instagram :hover{
+    color: hotpink;
+    transition: 0.5s;
+}
+
+#social li a.website :hover{
+    color: slateblue;
+    transition: 0.5s;
+}
